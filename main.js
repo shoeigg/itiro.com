@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ハンバーガーメニューの切り替え
     const hamburger = document.getElementById('hamburger');
     const nav = document.getElementById('nav');
 
@@ -8,8 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav.classList.toggle('active');
         });
     }
-
-    // リンククリック時にメニューを閉じる
+    
     const navLinks = document.querySelectorAll('.nav-list a');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
